@@ -1,11 +1,11 @@
-# Primeros pasos de React
+# Primeros pasos de React 👣
 
 * Para el uso de React es necesario hacer la Importación de este
 ````
 import React from 'react';
 ````
 ### 1.- Un Ejemplo del uso de una función en React:
-* En este caso podemos ver el primer Hola Mundo, el cual retorna un elemento **HTML**.
+* En este caso podemos ver el primer Hola Mundo, el cual retorna un elemento **HTML**. 👋
 ````
 const PrimeraApp = () => {
     return <h1>Hola Mundo</h1>;
@@ -57,3 +57,12 @@ return (
     );
 ````
 #
+### Impresion de Variables
+* Declaramos nuestra Variable `saludo`.
+````
+const saludo = 'Hola Mundo';
+````
+* Para luego imprimir nuesto **Hola Mundo** por pantalla.
+````
+<h1>{ saludo }</h1>
+````
