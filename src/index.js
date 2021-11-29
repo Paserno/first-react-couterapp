@@ -10,5 +10,5 @@ import './index.css';
 
 const divRoot =  document.querySelector('#root');
 //<PrimeraApp saludo="Hola mundo"/> 
-ReactDOM.render( <CounterApp value={123}/>,divRoot);
+ReactDOM.render( <CounterApp value={0}/>,divRoot);
 

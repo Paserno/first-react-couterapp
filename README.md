@@ -157,4 +157,35 @@ const handleAdd = (e) =>{
 ````
 De esta forma conseguimos un incremento del valor inicial de `useState(0)`.
 #
-### 7.- ABCDE:
+### 7.- TAREA handleSubtract - handleReset:
+Con el uso de useState del punto anterior, se realizo un incriemento del valor inicial que era 0, en esta ocasión se realizo un decremento y un reset del valor.
+- Para esto dejamos asignado el `value` en el numero que queramos en este caso __0__.
+````
+ReactDOM.render( <CounterApp value={0}/>,divRoot);
+````
+- Luego le pasamos el valor que recibimos al ___useState__, en este caso es __"value"__.
+````
+const CounterApp = ({value}) => {
+
+    const [counter,setCounter] = useState(value); // []
+...
+````
+- En este paso creamos los botones adicionales.
+````
+<button onClick={ handleAdd }>+1</button>
+<button onClick={ handleReset }>Reset</button>
+<button onClick={ handleSubtract }>-1</button>
+````
+- Y las funciones __handleReset__ y __handleSubtract__.
+````
+const handleReset = (e) =>{
+        setCounter(value);
+    }
+````
+````
+    const handleSubtract = (e) =>{
+        setCounter(counter - 1);
+    }
+````
+De esta forma conseguimos reiniciar el contador y decrementar su valor.
+#
