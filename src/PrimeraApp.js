@@ -1,10 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Funcional Coponent React
 
-const PrimeraApp = ( {saludo = 'Hola Mundo'} ) => {
+const PrimeraApp = ( {saludo} ) => {
 
-// Si no se quiere agregar un elemento <div>, utilizar <Fragment>
+    
+
     return (
         <>
             <h1>{ saludo }</h1>
@@ -13,6 +15,9 @@ const PrimeraApp = ( {saludo = 'Hola Mundo'} ) => {
         </>
     );
 }
-
+//! isRequired usar cuando es obligatorio el elemento
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired
+}
 
 export default PrimeraApp;

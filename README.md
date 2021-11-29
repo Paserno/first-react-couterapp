@@ -85,4 +85,23 @@ const PrimeraApp = ( {saludo} ) => {
 <h1> { saludo } </h1>
 ````
 #
-### 3.- ABCDE:
+### 3.- Prop Types:
+Para intentar que el usuario mande algun valor en el **prop** de nuestro componente, se pude hacer validaciones, con un if, pero para el caso que se quiera ahorrar recursos se puede utilizar un elemento.
+* Este elemento es el PropTypes, para eso es necesario su importacion.
+````
+import PropTypes from 'prop-types';
+````
+* Luego lo utilizamos, en este caso intentaremos recibir un **String**
+````
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string
+}
+````
+* En el caso que necesitemos obligatoriamente el elemento, utilizaremos el `.isRequired`, mandando un error (Warning).
+````
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired
+}
+````
+#
+### 4.- ABCD:
