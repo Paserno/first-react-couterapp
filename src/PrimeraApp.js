@@ -2,9 +2,8 @@ import React from 'react';
 
 // Funcional Coponent React
 
-const PrimeraApp = () => {
+const PrimeraApp = ( {saludo = 'Hola Mundo'} ) => {
 
-    const saludo = 'Hola Mundo';
 // Si no se quiere agregar un elemento <div>, utilizar <Fragment>
     return (
         <>

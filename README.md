@@ -66,3 +66,23 @@ const saludo = 'Hola Mundo';
 ````
 <h1>{ saludo }</h1>
 ````
+#
+### 2.- Comunicación entre componentes:
+* Como primer paso podemos enviar una variable en el `<PrimeraApp />`, en este caso **saludo**.
+````
+ReactDOM.render( <PrimeraApp saludo='Hola Mundo' /> ,divRoot);
+````
+* Para luego recibir la propiedad `props`, o existe una alternativa ...
+````
+const PrimeraApp = ( props ) => {
+````
+* Desestructurar el elemento **props**, y obtener el elemento que se envio del **index.js** - **ReactDOM.render()**
+````
+const PrimeraApp = ( {saludo} ) => {
+````
+* Y luego utilizar el elemento.
+````
+<h1> { saludo } </h1>
+````
+#
+### 3.- ABCDE:
