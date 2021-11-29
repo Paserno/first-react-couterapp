@@ -1,3 +1,15 @@
+
+# CounterApp 
+Esta es la primera aplicación de React. Recordar que si se desea ejecutar esta aplicación, deben de reconstruir los módulos de node así:
+````
+npm install
+````
+Y luego para hacerla correr.
+````
+npm start
+````
+<br>
+
 # Primeros pasos de React 👣
 
 * Para el uso de React es necesario hacer la Importación de este
@@ -118,7 +130,7 @@ PrimeraApp.defaultProps = {
 }
 ````
 #
-### 5.- Evento Click:
+### 5.- Evento Click :
 Creamos un boton en el `return` de la funcion.
 * Este evento le agregamos una funcion que retorna una impresion por consola.
 ````
@@ -135,7 +147,7 @@ const handleAdd = (e) =>{
 <button onClick={ handleAdd }>+1</button>
 ````
 #
-### 6.- Hooks useState:
+### 6.- Hooks useState 🎣: 
 En este ejemplo haremos una renderizacion de un boton con useState (incrementando un valor).
 - Creando un useState, inicializado en 0
 ````
