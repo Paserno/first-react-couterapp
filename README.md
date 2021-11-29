@@ -86,7 +86,7 @@ const PrimeraApp = ( {saludo} ) => {
 ````
 #
 ### 3.- Prop Types:
-Para intentar que el usuario mande algun valor en el **prop** de nuestro componente, se pude hacer validaciones, con un if, pero para el caso que se quiera ahorrar recursos se puede utilizar un elemento.
+Para intentar que el usuario mande algun argumento en el **prop** de nuestro componente, se pude hacer validaciones, con un if, pero para el caso que se quiera ahorrar recursos se puede utilizar un elemento...
 * Este elemento es el PropTypes, para eso es necesario su importacion.
 ````
 import PropTypes from 'prop-types';
@@ -97,11 +97,25 @@ PrimeraApp.propTypes = {
     saludo: PropTypes.string
 }
 ````
-* En el caso que necesitemos obligatoriamente el elemento, utilizaremos el `.isRequired`, mandando un error (Warning).
+* En el caso que necesitemos obligatoriamente recibir un argumento, utilizaremos el `.isRequired`, mandando un error (Warning).
 ````
 PrimeraApp.propTypes = {
     saludo: PropTypes.string.isRequired
 }
 ````
 #
-### 4.- ABCD:
+### 4.- Default Props:
+En el caso que tengamos una propiedad, que necesitemos que tenga un valor por defecto, tenemos 2 opciones...
+* La forma comun o tradicional de asignar un valor por defecto.
+````
+const PrimeraApp = ( {saludo, subtitulo = 'Soy un subtitulo'} ) => {
+````
+* La otra manera de hacerlo es con `.defaultProps`.
+* Tambien saldrian en los "components" **props**, a diferencia de la opcion anterior
+````
+PrimeraApp.defaultProps = {
+    subtitulo:'Soy un subtitulo'
+}
+````
+#
+### 5.- ABCDE:
