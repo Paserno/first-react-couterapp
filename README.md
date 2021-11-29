@@ -135,4 +135,26 @@ const handleAdd = (e) =>{
 <button onClick={ handleAdd }>+1</button>
 ````
 #
-### 6.- ABCDE:
+### 6.- Hooks useState:
+En este ejemplo haremos una renderizacion de un boton con useState (incrementando un valor).
+- Creando un useState, inicializado en 0
+````
+const [counter,setCounter] = useState(0);
+````
+- Ingresamos nuestra propiedad __setCounter__ en nuestra funcion anteriormente creada.
+````
+const handleAdd = (e) =>{
+        setCounter(counter + 1);
+}
+````
+- Ingresamos nuestra variable en un elemento html, para que se pueda visualizar.
+````
+<h2>{counter}</h2>
+````
+- Luego vemos nuestro boton que tiene la funcion en el __onClick__, la cual realizara el incremento del valor.
+````
+<button onClick={ handleAdd }>+1</button>
+````
+De esta forma conseguimos un incremento del valor inicial de `useState(0)`.
+#
+### 7.- ABCDE:
