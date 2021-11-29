@@ -118,4 +118,21 @@ PrimeraApp.defaultProps = {
 }
 ````
 #
-### 5.- ABCDE:
+### 5.- Evento Click:
+Creamos un boton en el `return` de la funcion.
+* Este evento le agregamos una funcion que retorna una impresion por consola.
+````
+<button onClick={ console.log('+1')}>+1</button>
+````
+* Ademas podemos agregarle funcionalidad, dentro del evento **onClick**.
+````
+const handleAdd = (e) =>{
+        console.log(e)
+    }
+````
+* Equivalente a :`onClick={(e)=> {handleAdd(e)}}`
+````
+<button onClick={ handleAdd }>+1</button>
+````
+#
+### 6.- ABCDE:
