@@ -1,4 +1,10 @@
 
+
+> __Elemento Anterior 👀:__ __[Reforzar JS 💪](https://github.com/Paserno/recordatorio-JS)__
+
+<br>
+
+
 # CounterApp 
 Esta es la primera aplicación de React. Recordar que si se desea ejecutar esta aplicación, deben de reconstruir los módulos de node así:
 ````
@@ -9,6 +15,8 @@ Y luego para hacerla correr.
 npm start
 ````
 <br>
+
+
 
 # Primeros pasos de React 👣
 
@@ -201,3 +209,4 @@ const handleReset = (e) =>{
 ````
 De esta forma conseguimos reiniciar el contador y decrementar su valor.
 #
+> Test con JEST
