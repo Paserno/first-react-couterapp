@@ -209,4 +209,4 @@ const handleReset = (e) =>{
 ````
 De esta forma conseguimos reiniciar el contador y decrementar su valor.
 #
-> Test con JEST
+> Test con __JEST__ (Unitarias y Integración)
