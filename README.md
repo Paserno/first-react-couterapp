@@ -210,3 +210,4 @@ const handleReset = (e) =>{
 De esta forma conseguimos reiniciar el contador y decrementar su valor.
 #
 > Test con __JEST__ (Unitarias y Integración)
+> __Elemento Posterior 👀:__ __[Gif App ⚛️](https://github.com/Paserno/react-gif-app)__
